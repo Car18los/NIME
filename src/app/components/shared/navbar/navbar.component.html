@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NIME</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " routerLinkActive="active" aria-current="page" [routerLink]="['home']">Inicio</a>
+          </li>
+                    
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><h6 class="dropdown-header"></h6></li>
+              <li><a class="dropdown-item" href="#">Series</a></li>
+              <li><a class="dropdown-item" href="#">Hombres</a></li>
+              <li><a class="dropdown-item" href="#">Mujeres</a></li>
+              <li><a class="dropdown-item" href="#">Games</a></li>
+              <li><a class="dropdown-item" href="#">Vocaloid</a></li>
+              <li><a class="dropdown-item" href="#">Smartphone</a></li>
+              <li><a class="dropdown-item" href="#">Iconos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Wallpaper</a></li>
+              <li><a class="dropdown-item" href="#">Wallpaper Anime</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Faboritas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLinkActive="active" aria-current="page" [routerLink]="['about']">Creditos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Busca tu fondo faborito" aria-label="search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
