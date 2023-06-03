@@ -12,10 +12,12 @@
             <a class="nav-link " routerLinkActive="active" aria-current="page" [routerLink]="['home']">Inicio</a>
           </li>
                     
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </a>
+          <li class="nav-item btn-group dropend">
+            <button type="button" class="nav-link" routerLinkActive="active" [routerLink]="['category']">Categoria</button>
+            <button type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+
+             </button>
             <ul class="dropdown-menu">
               <li><h6 class="dropdown-header"></h6></li>
               <li><a class="dropdown-item" href="#">Series</a></li>
