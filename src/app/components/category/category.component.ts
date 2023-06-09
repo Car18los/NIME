@@ -15,4 +15,12 @@ export class CategoryComponent {
   ){
     this.listarcategory = this.categoryServices.getListarCategory();
   }
+  
+  selectedCard(id:string){
+    console.log(id)
+  }
+
+
 }
+
+
