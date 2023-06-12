@@ -1,11 +1,7 @@
-<div class="row">
-    <div class="col -md-4 p-1" *ngFor="let serie of listarSeries">
-     
-     <div class="card card-photo" style="width: 17rem; height: 22rem;" >
-       <img [src]="serie.img"  style="height: 17rem; width: 17rem;">
-       <div class="card-body">
-         <h5 class="card-title">{{serie.nombre}}</h5>   
-       </div>
+<div class="row "  >
+    <div class="col -md-4 p-1"  *ngFor="let serie of listarSeries">
+     <div class="figure card-photo" style="width: 9rem; height: 18rem;">
+       <img [src]="serie.img"  style="width: 9rem; height: 18rem;">
      </div>  
      </div>
    </div>

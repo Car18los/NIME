@@ -1,1 +1,7 @@
-<p>hombres works!</p>
+<div class="row "  >
+    <div class="col -md-4 p-1"  *ngFor="let hombre of listarHombres">
+     <div class="figure card-photo" style="width: 9rem; height: 18rem;">
+       <img [src]="hombre.img"  style="width: 9rem; height: 18rem;">
+     </div>  
+     </div>
+   </div>
