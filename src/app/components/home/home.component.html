@@ -1,8 +1,8 @@
 <h1 class="text-start" class="display-5 fw-bold fs-5">Fondos de Pantalla HD y Ultra 4k Wallpapers</h1>
 <p class="text-start"  class="col-md-8 fs-6">Descarga de fondos de pantalla o wallpapers para tu celular o escritorio PC con calidades como HD y 4k ultra UHD.</p>
 
-
-<div id="carouselExampleIndicators" class="carousel slide"  style="width: 60rem; height: 35rem;">
+<div class="row">
+<div id="carouselExampleIndicators" class="carousel slide"  style="width: 60rem; height: 35rem;" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -26,5 +26,12 @@
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button>  
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<div class="btn-group" style="width: 10rem; height: 4rem;" *ngFor="let category of listarCategory">
+<button type="button" class="btn btn-outline-primary d-flex justify-content-between align-items-center">{{category.nombre}} <span class="badge bg-primary rounded-pill">14</span></button>
+</div>
+</div>
 </div>

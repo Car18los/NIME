@@ -11,6 +11,8 @@ import { CategoryComponent } from './components/category/category.component';
 import { SeriesComponent } from './components/category/series/series.component';
 import { HombresComponent } from './components/category/hombres/hombres.component';
 import { MujeresComponent } from './components/category/mujeres/mujeres.component';
+import { GamesComponent } from './components/category/games/games.component';
+import { FondoComponent } from './components/fondo/fondo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MujeresComponent } from './components/category/mujeres/mujeres.componen
     CategoryComponent,
     SeriesComponent,
     HombresComponent,
-    MujeresComponent
+    MujeresComponent,
+    GamesComponent,
+    FondoComponent
   ],
   imports: [
     BrowserModule,

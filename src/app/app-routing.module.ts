@@ -6,6 +6,9 @@ import { AboutComponent } from './components/about/about.component';
 import { SeriesComponent } from './components/category/series/series.component';
 import { HombresComponent } from './components/category/hombres/hombres.component';
 import { MujeresComponent } from './components/category/mujeres/mujeres.component';
+import { GamesComponent } from './components/category/games/games.component';
+import { FondoComponent } from './components/fondo/fondo.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -15,6 +18,8 @@ const routes: Routes = [
   {path:'serie' , component: SeriesComponent},
   {path:'hombres', component:HombresComponent},
   {path:'mujeres', component:MujeresComponent},
+  {path:'games', component:GamesComponent},
+  {path:'fondo/:id',component:FondoComponent}
 
 ];
 

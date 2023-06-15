@@ -2,7 +2,7 @@
  <div class="col -md-4 p-4" *ngFor="let category of listarCategory">
   
   <div class="card card-photo" (click)="selectedCard(category.idx)" style="width: 17rem; height: 22rem;" >
-    <img [src]="category.img"  style="height: 17rem; width: 17rem;">
+    <img [src]="category.img"  style="height: 17rem; width: 16.9rem;">
     <div class="card-body">
       <h5 class="card-title">{{category.nombre}}</h5>
       <p class="card-text">{{category.descripcion}}</p>

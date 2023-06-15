@@ -1,1 +1,10 @@
-<p>mujeres works!</p>
+<h1 class="text-start" class="display-5 fw-bold fs-0">Chicas</h1>
+<p class="text-start"  class="col-md-8 fs-6">Descarga fondos de pantalla para tu celular con calidades como HD y 4k ultra UHD.</p>
+
+<div class="row "  >
+    <div class="col -md-4 p-1"  *ngFor="let mujer of listarMujeres">
+     <div class="figure card-photo" style="width: 9rem; height: 18rem;">
+       <img [src]="mujer.img"  style="width: 8.9rem; height: 18rem;">
+     </div>  
+     </div>
+   </div>

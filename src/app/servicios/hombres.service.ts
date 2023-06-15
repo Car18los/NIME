@@ -87,8 +87,23 @@ private hombress:Hombres[] = [
   {
     nombre: "Fire",
     img: "https://lh3.googleusercontent.com/pw/AJFCJaWSFR_A-ZasS0_7tWRqp_9W9FbzcgAULbOu9kFtJWW8ndulVv75MxffseZroXl0GlBGJ8PriFODcBsHYEaPkM0b-mNNTGAmL4wX7nYfKlm-11KyGdVcTypTD9eIns91WAzMu-DDiANIlCvuEeqzlaRa=w425-h756-s-no?authuser=1",
+  },
+  {
+    nombre: "Merlin",
+    img: "https://lh3.googleusercontent.com/pw/AJFCJaUv_KB82hJtl24Sv3VD8UPzbcBxxCb5mgRjSZR9Kj0uICfhror7vOmlLfCuGhLyA3Zs40AlZSq1WKZbvKCkct4YDzaX4kXmnm80fHbhMBEpS81vq5EHdFGrYIhVTkldzerkpgTOeoVYKAE5Kv4P6h6S=w426-h757-s-no?authuser=1",
+  },
+  {
+    nombre: "Merlin",
+    img: "https://lh3.googleusercontent.com/pw/AJFCJaWZknpt9NBzCvr_Ccsuz8NQxyciPFwnn7FIL1MkebUwb-a3EYvwFuqc31WFVkYtmeiDJRIywqAbI6OogGt3lXG8dl89yTdVReS2YXrnIgRgachyoYMFOlj_Fh7ad7bQdpO8TViEqgvKjzVvkdLrG11l=w426-h757-s-no?authuser=1",
+  },
+  {
+    nombre: "Merlin",
+    img: "https://lh3.googleusercontent.com/pw/AJFCJaVJ_eE_7gJ-AXLdokzsuKVT7QB63dQVsUX0oY82foU-QbrIdddNFJsWJ7pjr3AG-5PjhwsTPtqAD3OUPDvtgRsV8oeiTCSgPPEFdGHU3XTCY5xtVwIMzBShOBp3uA__HmLlKhBB85vKTjk6PfpXo2Y5=w426-h757-s-no?authuser=1",
+  },
+  {
+    nombre: "Merlin",
+    img: "https://lh3.googleusercontent.com/pw/AJFCJaWSkXqq-a3_WL1S4stVYD-bFxJDRo3E4b6Vontz2VF1bn57VCjCkmVmr6kYLZxiCjCtOXg6tnpHCdNNZacHQ8nOrwdVBlzVfwGTypV7A-2WqRzsJiDQ_IUf9xuT_wE36L2PnQS-YQUMovnkfymGXjmI=w426-h757-s-no?authuser=1",
   }
-
   ]
   constructor() { 
     console.log('Servicio listo para usar');

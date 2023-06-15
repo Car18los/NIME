@@ -26,6 +26,9 @@ export class CategoryComponent {
     else if(id=="103"){
       this.router.navigate(['mujeres'])
     }
+    else if(id=="104"){
+      this.router.navigate(['games'])
+    }
   }
 
 
