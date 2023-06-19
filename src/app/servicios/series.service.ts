@@ -135,5 +135,8 @@ private seriess:Series[] = [
    getListarSeries():Series[]{
     return this.seriess;
     }
-  
+
+  getFondo(id:string){
+    return id;
+  }
 }

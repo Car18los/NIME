@@ -20,5 +20,6 @@ export class SeriesComponent {
   selectFondo(id:string){
     console.log(id)
     this.router.navigate(['fondo',id]);
+    //this.SeriesServices.getFondo(id)
   }
 }
