@@ -128,15 +128,14 @@ private seriess:Series[] = [
   ];
 
   constructor() {
-    console.log('Servicio listo para usar'); 
-    
+    console.log('Servicio listo para usar');   
   }
    
    getListarSeries():Series[]{
     return this.seriess;
     }
 
-  getFondo(id:string){
-    return id;
+  getFondo(id:number){
+    return this.seriess[id];
   }
 }

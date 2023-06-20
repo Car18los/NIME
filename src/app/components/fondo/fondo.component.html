@@ -1,13 +1,17 @@
 <p class="text-start"  class="col-md-8 fs-6">Descarga fondos de pantalla para tu celular con calidades como HD y 4k ultra UHD.</p>
 
-<div class="row" *ngIf="id; else main_content">
+<div class="row" *ngIf="fondo; else main_content">
 <h1>Loading</h1>
 </div>
 <ng-template #main_content>
     <div class="row "  >
         <div class="col -md-4 p-1">
-         <div class="figure card-photo" style="width: 9rem; height: 18rem;">
-           <img [src]=""  style="width: 8.9rem; height: 18rem;">
+         <div class="figure card-photo" style="height: 18rem; width: 17rem; ">
+          <img [src]="fondo.img"  style="height: 17rem; width: 16.9rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{fondo.nombre}}</h5>
+            <p class="card-text">{{fondo.descripcion}}</p>
+          </div> 
          </div>  
          </div>
        </div>

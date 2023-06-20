@@ -12,14 +12,14 @@ export class SeriesComponent {
   listarSeries: Series[] = [];
 
   constructor(
-    private SeriesServices: SeriesService, private router:Router
+    private SeriesServices: SeriesService, 
+    private router:Router
   ){
     this.listarSeries = this.SeriesServices.getListarSeries();
   }
 
   selectFondo(id:string){
     console.log(id)
-    this.router.navigate(['fondo',id]);
-    //this.SeriesServices.getFondo(id)
+    this.router.navigate(['/fondo',id]);
   }
 }
