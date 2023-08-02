@@ -20,7 +20,7 @@ export class FondoComponent {
 
   ){
     this.ActiveRoute.params.subscribe(params =>{
-   // console.log(params['id']);
+   console.log(params['id']);
     this.fondo = this.SeriesServices.getFondo(params['id']);
     console.log(this.fondo);
     });
