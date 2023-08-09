@@ -1,20 +1,21 @@
-<p class="text-start"  class="col-md-8 fs-6">Descarga fondos de pantalla para tu celular con calidades como HD y 4k ultra UHD.</p>
-
-<div class="row" *ngIf="fondo; else main_content">
-<h1>Loading</h1>
+<div class="row" *ngIf="!fondo; else main_content">
+ <h1>Cargando...</h1>
 </div>
-<ng-template #main_content>
-    <div class="row "  >
-        <div class="col -md-4 p-1">
-         <div class="figure card-photo" style="height: 18rem; width: 17rem; ">
-          <img [src]="fondo.img"  style="height: 17rem; width: 16.9rem;">
-          <div class="card-body">
-            <h5 class="card-title display-7 fw-bold">{{fondo.nombre | uppercase }}</h5>
-        
-          </div> 
-         </div>  
-         </div>
-       </div>
-</ng-template>
 
+<ng-template #main_content>
+<div class="row g-0" style="width: 70rem; height: 50rem;" >
+  <div class="col-md-4">
+    <img [src]="fondo.img"  style="height: 40rem; width: 20rem;">
+  </div>
+
+    <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title display-7 fw-bold">{{fondo.nombre | uppercase }}</h5>          
+            <br><br>
+            <a [routerLink]="['/fondo.catego']" class="btn btn-outline-secondary btn-block" style="width: 15rem; height: 2rem;">Regresar</a>
+          
+          </div>    
+        </div>      
+</div>
+</ng-template>
 

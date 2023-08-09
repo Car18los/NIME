@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Series } from 'src/app/models/seriess.interfaz';
 import { SeriesService } from 'src/app/servicios/series.service';
+import { category } from '../../models/categorys.interfaz';
 
 @Component({
   selector: 'app-fondo',
@@ -16,7 +17,8 @@ export class FondoComponent {
   constructor(
     private ActiveRoute:ActivatedRoute,
     //private router:Router,
-    private SeriesServices: SeriesService
+    private SeriesServices: SeriesService, 
+    private router:Router
 
   ){
     this.ActiveRoute.params.subscribe(params =>{
@@ -26,5 +28,5 @@ export class FondoComponent {
     });
 
   }
-  
+
 }
