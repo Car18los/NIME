@@ -15,4 +15,19 @@ export class HomeComponent {
   {
     this.listarCategory = this.categoryServices.getListarCategory();
   }
+  
+  selectedCard(id:string){
+    if(id=="101"){
+      this.router.navigate(['serie'])
+    }
+    else if(id=="102"){
+      this.router.navigate(['hombres'])
+    }
+    else if(id=="103"){
+      this.router.navigate(['mujeres'])
+    }
+    else if(id=="104"){
+      this.router.navigate(['games'])
+    }
+  }
 }

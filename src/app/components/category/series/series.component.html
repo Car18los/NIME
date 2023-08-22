@@ -3,7 +3,7 @@
 
 <div class="row "  >
     <div class="col -md-4 p-1"  *ngFor="let serie of listarSeries; let i=index">
-     <div class="figure card-photo" (click)="selectFondo(i)" style="width: 9rem; height: 18rem;">
+     <div class="figure card-photo" (click)="selectFondo(i, serie.catego) " style="width: 9rem; height: 18rem;">
        <img [src]="serie.img"  style="width: 8.9rem; height: 18rem;">
      </div>  
      </div>

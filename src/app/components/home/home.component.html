@@ -2,7 +2,8 @@
 <p class="text-start"  class="col-md-8 fs-6">Descarga de fondos de pantalla o wallpapers para tu celular o escritorio PC con calidades como HD y 4k ultra UHD.</p>
 
 <div class="row">
-<div id="carouselExampleIndicators" class="carousel slide"  style="width: 60rem; height: 35rem;" data-bs-ride="carousel">
+  <div class="col">
+   <div id="carouselExampleIndicators" class="carousel slide"  style="width: 60rem; height: 35rem;" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -18,20 +19,21 @@
     <div class="carousel-item">
       <img src="https://lh3.googleusercontent.com/pw/AJFCJaVilok7A5gPdSr9kyZge695jgcQYteL5hee6bL5yNa7zXbNyZrl9k5s5ccP1To8TdNx1ghfm8RwEtfWhpsRhUq7_ZDBX3I7VtmhxbJzMUGgo3Coc9EqFl2UsYuos40O2CueXArwD_mU5NpMVG6egSSq=w1346-h757-s-no?authuser=1" class="d-block w-100" alt="...">
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
-  </button>
+    </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>  
 </div>
+</div>
 
-<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-<div class="btn-group" style="width: 10rem; height: 4rem;" *ngFor="let category of listarCategory">
-<button type="button" class="btn btn-outline-primary d-flex justify-content-between align-items-center">{{category.nombre}} <span class="badge bg-primary rounded-pill">14</span></button>
+<div class="col d-grid justify-content-md-end">
+<div class="btn-group" style="width: 14rem; height: 3rem;" *ngFor="let category of listarCategory">
+<button type="button" (click)="selectedCard(category.idx)" class="btn btn-outline-primary d-flex justify-content-between align-items-center">{{category.nombre}} <span class="badge bg-primary rounded-pill">14</span></button>
 </div>
 </div>
 </div>

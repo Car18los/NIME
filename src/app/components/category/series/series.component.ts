@@ -18,8 +18,10 @@ export class SeriesComponent {
     this.listarSeries = this.SeriesServices.getListarSeries();
   }
 
-  selectFondo(id:number){
+  selectFondo(id:number, catego:string){
     console.log(id)
+    console.log(catego)
     this.router.navigate(['/fondo',id]);
+
   }
 }
